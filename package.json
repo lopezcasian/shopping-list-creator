@@ -1,0 +1,30 @@
+{
+  "name": "shoppingListCreator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "dependencies": {
+    "@types/multer": "^2.2.0",
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "node-tesseract-ocr": "^2.2.1",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.5.2",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.2",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.14",
+    "typescript": "^6.0.3"
+  }
+}

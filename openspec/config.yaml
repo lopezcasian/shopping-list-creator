@@ -1,0 +1,45 @@
+schema: spec-driven
+
+# Project context (optional)
+# Add only constraints that should guide OpenSpec artifacts and workflows.
+# Include constraints an agent cannot infer by reading the code.
+# Keep general project documentation and discoverable codebase facts out.
+
+context: |
+  RESTFul API that accepts two PDF files that contain similar nutritionist menu in a POST endpoint, 
+  it contains text that we need to extract (using OCR) and sum up the portions of each ingredient for our shopping list.
+
+  Tech stack: Express.js, TypeScript, pnpm
+  API style: RESTful
+  Testing framework: Jest
+
+  TDD discipline (non-negotiable):
+  - Follow Red–Green–Refactor strictly.
+  - For every behavior in the specs, write failing tests FIRST, then implement.
+  - Don't test external dependencies (e.g. AWS services, API calls).
+  - Do not unit test code without logic (e.g. simple getters/setters, data models, etc.).
+
+  
+
+rules:
+  proposal:
+    - Keep proposals under 500 words
+    - Always state what is out of scope
+    - Include a rollback plan
+  spec:
+    - Use Given/When/Then format
+  design:
+    - Reference existing patterns before inventing new ones
+  tasks:
+    - Use imperative verbs in task titles
+    - Avoid tasks that are too large to complete in a single work session
+
+
+operations:
+  apply:
+    guidance:
+      - Do not run `pnpm run dev` during the apply phase
+      - Prefer small, focused diffs; keep each implementation change under ~30 lines when possible
+    archive:
+      guidance:
+      - Summarize the archive outcome before finishing
