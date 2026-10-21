@@ -40,6 +40,6 @@ operations:
     guidance:
       - Do not run `pnpm run dev` during the apply phase
       - Prefer small, focused diffs; keep each implementation change under ~30 lines when possible
-    archive:
-      guidance:
-      - Summarize the archive outcome before finishing
+  archive:
+    guidance:
+    - Summarize the archive outcome before finishing

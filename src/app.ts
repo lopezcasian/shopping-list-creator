@@ -3,7 +3,8 @@ import multer from 'multer';
 import { PDFParse } from 'pdf-parse';
 import { writeFile } from 'node:fs/promises';
 import { recognize } from './recognizer.ts'
-import { parseMenu } from './menuParser.ts'
+import { parseMenu, type IngredientEntry } from './menuParser.ts'
+import { buildShoppingList } from './shoppingList.ts'
 
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage });
@@ -11,6 +12,7 @@ const upload = multer({ storage: storage });
 const app: Express = express();
 
 app.post('/upload', upload.array('files', 2), async (req: Request, res: Response) => {
+    const entries: IngredientEntry[] = [];
     for (const file of req.files as Express.Multer.File[]) {
         const parser = new PDFParse({ data: file.buffer });
         
@@ -23,11 +25,11 @@ app.post('/upload', upload.array('files', 2), async (req: Request, res: Response
 
         for (const page of results.pages) {
             const text = await recognize(`screenshots/page_${page.pageNumber}.png`)
-            console.log(`Ingredients from page ${page.pageNumber}:`, parseMenu(text));
+            entries.push(...parseMenu(text));
         }
         
     }
-    res.send('Files uploaded successfully');
+    res.json(buildShoppingList(entries));
 });
 
 app.listen(3000, () => {
