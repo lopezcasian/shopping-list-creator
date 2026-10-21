@@ -5,12 +5,14 @@ import { writeFile } from 'node:fs/promises';
 import { recognize } from './recognizer.ts'
 import { parseMenu } from './menuParser.ts'
 
-const upload = multer({ dest: 'uploads/' });
+const storage = multer.memoryStorage()
+const upload = multer({ storage: storage });
+
 const app: Express = express();
 
 app.post('/upload', upload.array('files', 2), async (req: Request, res: Response) => {
     for (const file of req.files as Express.Multer.File[]) {
-        const parser = new PDFParse({ url: file.path });
+        const parser = new PDFParse({ data: file.buffer });
         
         const results = await parser.getScreenshot({scale: 4});
         await parser.destroy();
