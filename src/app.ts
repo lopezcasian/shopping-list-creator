@@ -1,7 +1,6 @@
 import express, {type Express, type Request, type Response} from 'express';
 import multer from 'multer';
 import { PDFParse } from 'pdf-parse';
-import { writeFile } from 'node:fs/promises';
 import { recognize } from './recognizer.ts'
 import { parseMenu, type IngredientEntry } from './menuParser.ts'
 import { buildShoppingList } from './shoppingList.ts'

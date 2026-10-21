@@ -18,7 +18,7 @@ function joinWrappedLines(text: string): string[] {
 }
 
 // Step 3: "Tortilla 2 piezas 44 g" -> { name: 'Tortilla', amount: 44, unit: 'g' }
-function toEntry(line: string, quantity: RegExpExecArray): IngredientEntry | undefined {
+function toIngredientEntry(line: string, quantity: RegExpExecArray): IngredientEntry | undefined {
     const words = line.slice(0, quantity.index).trim().split(/\s+/);
     const measureAt = words.findIndex(word => measureStartRegex.test(word));
     const name = (measureAt === -1 ? words : words.slice(0, measureAt)).join(' ');
@@ -32,7 +32,7 @@ export function parseMenu(text: string): IngredientEntry[] {
     for (const line of joinWrappedLines(text)) {
         // Step 2: headers, day names, the date and recipe names have no quantity, so they are skipped
         const quantity = quantityRegex.exec(line);
-        const entry = quantity && toEntry(line, quantity);
+        const entry = quantity && toIngredientEntry(line, quantity);
         if (entry) entries.push(entry);
     }
     return entries;
