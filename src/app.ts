@@ -3,6 +3,7 @@ import multer from 'multer';
 import { PDFParse } from 'pdf-parse';
 import { writeFile } from 'node:fs/promises';
 import { recognize } from './recognizer.ts'
+import { parseMenu } from './menuParser.ts'
 
 const upload = multer({ dest: 'uploads/' });
 const app: Express = express();
@@ -20,7 +21,7 @@ app.post('/upload', upload.array('files', 2), async (req: Request, res: Response
 
         for (const page of results.pages) {
             const text = await recognize(`screenshots/page_${page.pageNumber}.png`)
-            console.log(`Text from page ${page.pageNumber}:`, text);
+            console.log(`Ingredients from page ${page.pageNumber}:`, parseMenu(text));
         }
         
     }
