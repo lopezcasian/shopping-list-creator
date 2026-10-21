@@ -1,8 +1,8 @@
-import { recognize as ocr_recognize } from 'node-tesseract-ocr';
+import { type Input, recognize as ocr_recognize } from 'node-tesseract-ocr';
 import { readFile } from 'node:fs/promises';
 
-export async function recognize(path: string): Promise<string> {
-    const text = await ocr_recognize(await readFile(path), {
+export async function recognize(path: Input): Promise<string> {
+    const text = await ocr_recognize(path, {
         lang: 'spa+eng',
         oem: 1,
         psm: 3,

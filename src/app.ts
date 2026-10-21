@@ -20,16 +20,13 @@ app.post('/upload', upload.array('files', 2), async (req: Request, res: Response
         await parser.destroy();
 
         for (const page of results.pages) {
-            await writeFile(`screenshots/page_${page.pageNumber}.png`, page.data);
-        }
-
-        for (const page of results.pages) {
-            const text = await recognize(`screenshots/page_${page.pageNumber}.png`)
+            const text = await recognize(page.data as Buffer);
             entries.push(...parseMenu(text));
         }
-        
     }
-    res.json(buildShoppingList(entries));
+    res.json(buildShoppingList(entries).map(entry => ({
+        ingredient: `${entry.name} ${entry.amount} ${entry.unit}`,
+    })));
 });
 
 app.listen(3000, () => {
