@@ -3,10 +3,10 @@ import { readFile } from 'node:fs/promises';
 
 export async function recognize(path: string): Promise<string> {
     const text = await ocr_recognize(await readFile(path), {
-        lang: 'spa',
+        lang: 'spa+eng',
         oem: 1,
         psm: 3,
-        dpi: 300,
+        dpi: 150,
     });
     return text;
 }

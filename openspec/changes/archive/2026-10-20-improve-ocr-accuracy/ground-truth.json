@@ -1,0 +1,493 @@
+{
+ "1": [
+  {
+   "name": "Pan de masa madre",
+   "amount": 70,
+   "unit": "g"
+  },
+  {
+   "name": "Jamón de pavo",
+   "amount": 21,
+   "unit": "g"
+  },
+  {
+   "name": "Jitomate bola",
+   "amount": 50,
+   "unit": "g"
+  },
+  {
+   "name": "Lechuga",
+   "amount": 23,
+   "unit": "g"
+  },
+  {
+   "name": "Mayonesa",
+   "amount": 12,
+   "unit": "g"
+  },
+  {
+   "name": "Fresas enteras",
+   "amount": 96,
+   "unit": "g"
+  },
+  {
+   "name": "Arroz",
+   "amount": 100,
+   "unit": "g"
+  },
+  {
+   "name": "Fajita de pollo",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Pimiento rojo o verde",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Cebolla blanca",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Brócoli cocido",
+   "amount": 184,
+   "unit": "g"
+  },
+  {
+   "name": "Almendras",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Pechuga de pollo, asada",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Tortilla de maíz",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Aguacate",
+   "amount": 103.3,
+   "unit": "g"
+  },
+  {
+   "name": "Tortilla",
+   "amount": 22,
+   "unit": "g"
+  },
+  {
+   "name": "Huevo entero fresco",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Aceite de canola",
+   "amount": 5,
+   "unit": "ml"
+  },
+  {
+   "name": "Nopales cocidos",
+   "amount": 149,
+   "unit": "g"
+  },
+  {
+   "name": "Uva verde sin semilla",
+   "amount": 140,
+   "unit": "g"
+  },
+  {
+   "name": "Arroz",
+   "amount": 100,
+   "unit": "g"
+  },
+  {
+   "name": "Fajita de pollo",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Pimiento rojo o verde",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Cebolla blanca",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Brócoli cocido",
+   "amount": 276,
+   "unit": "g"
+  },
+  {
+   "name": "Cacahuates",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Carne de res",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Nopales crudos",
+   "amount": 134,
+   "unit": "g"
+  },
+  {
+   "name": "Tortilla",
+   "amount": 44,
+   "unit": "g"
+  },
+  {
+   "name": "Huevo entero fresco",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Jamón de pavo",
+   "amount": 42,
+   "unit": "g"
+  },
+  {
+   "name": "Aceite de canola",
+   "amount": 5,
+   "unit": "ml"
+  },
+  {
+   "name": "Manzana",
+   "amount": 106,
+   "unit": "g"
+  },
+  {
+   "name": "Arroz",
+   "amount": 100,
+   "unit": "g"
+  },
+  {
+   "name": "Fajita de pollo",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Pimiento rojo o verde",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Cebolla blanca",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Brócoli cocido",
+   "amount": 276,
+   "unit": "g"
+  },
+  {
+   "name": "Nuez",
+   "amount": 25.7,
+   "unit": "g"
+  },
+  {
+   "name": "Pollo",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Zanahoria",
+   "amount": 40,
+   "unit": "g"
+  },
+  {
+   "name": "Lechuga",
+   "amount": 45,
+   "unit": "g"
+  }
+ ],
+ "2": [
+  {
+   "name": "Tortilla de maíz",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Queso manchego",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Nopales cocidos",
+   "amount": 149,
+   "unit": "g"
+  },
+  {
+   "name": "Fresas enteras",
+   "amount": 96,
+   "unit": "g"
+  },
+  {
+   "name": "Filete de pescado",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita criolla",
+   "amount": 93,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita",
+   "amount": 120,
+   "unit": "g"
+  },
+  {
+   "name": "Pasta cocida",
+   "amount": 120,
+   "unit": "g"
+  },
+  {
+   "name": "Salsa de tomate",
+   "amount": 50,
+   "unit": "g"
+  },
+  {
+   "name": "Almendras",
+   "amount": 15,
+   "unit": "g"
+  },
+  {
+   "name": "Atún en agua, drenado",
+   "amount": 180,
+   "unit": "ml"
+  },
+  {
+   "name": "Zanahoria",
+   "amount": 40,
+   "unit": "g"
+  },
+  {
+   "name": "Lechuga",
+   "amount": 60,
+   "unit": "g"
+  },
+  {
+   "name": "Mayonesa",
+   "amount": 12,
+   "unit": "g"
+  },
+  {
+   "name": "Pan de masa madre",
+   "amount": 70,
+   "unit": "g"
+  },
+  {
+   "name": "Crema agria",
+   "amount": 28,
+   "unit": "ml"
+  },
+  {
+   "name": "Fajita de pollo",
+   "amount": 100,
+   "unit": "g"
+  },
+  {
+   "name": "Tomate rojo (Jitomate)",
+   "amount": 30,
+   "unit": "g"
+  },
+  {
+   "name": "Lechuga cos o romana",
+   "amount": 68,
+   "unit": "g"
+  },
+  {
+   "name": "Uva verde sin semilla",
+   "amount": 140,
+   "unit": "g"
+  },
+  {
+   "name": "Filete de pescado",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita criolla",
+   "amount": 93,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita",
+   "amount": 120,
+   "unit": "g"
+  },
+  {
+   "name": "Pasta cocida",
+   "amount": 60,
+   "unit": "g"
+  },
+  {
+   "name": "Salsa de tomate",
+   "amount": 50,
+   "unit": "g"
+  },
+  {
+   "name": "Cacahuates",
+   "amount": 18,
+   "unit": "g"
+  },
+  {
+   "name": "Aguacate",
+   "amount": 113.3,
+   "unit": "g"
+  },
+  {
+   "name": "Tomate",
+   "amount": 30,
+   "unit": "g"
+  },
+  {
+   "name": "Cebolla",
+   "amount": 10,
+   "unit": "g"
+  },
+  {
+   "name": "Filete de res",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Aceite",
+   "amount": 5,
+   "unit": "ml"
+  },
+  {
+   "name": "Huevo entero cocido",
+   "amount": 132,
+   "unit": "g"
+  },
+  {
+   "name": "Champiñón fresco",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Tortilla",
+   "amount": 44,
+   "unit": "g"
+  },
+  {
+   "name": "Manzana",
+   "amount": 106,
+   "unit": "g"
+  },
+  {
+   "name": "Filete de pescado",
+   "amount": 250,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita criolla",
+   "amount": 93,
+   "unit": "g"
+  },
+  {
+   "name": "Calabacita",
+   "amount": 120,
+   "unit": "g"
+  },
+  {
+   "name": "Pasta cocida",
+   "amount": 120,
+   "unit": "g"
+  },
+  {
+   "name": "Salsa de tomate",
+   "amount": 50,
+   "unit": "g"
+  },
+  {
+   "name": "Nuez",
+   "amount": 21.4,
+   "unit": "g"
+  },
+  {
+   "name": "Pollo",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Brócoli cocido",
+   "amount": 276,
+   "unit": "g"
+  }
+ ],
+ "3": [
+  {
+   "name": "Tortilla",
+   "amount": 44,
+   "unit": "g"
+  },
+  {
+   "name": "Huevo revuelto",
+   "amount": 150,
+   "unit": "g"
+  },
+  {
+   "name": "Tomate",
+   "amount": 30,
+   "unit": "g"
+  },
+  {
+   "name": "Aceite de canola",
+   "amount": 5,
+   "unit": "ml"
+  },
+  {
+   "name": "Cebolla",
+   "amount": 15,
+   "unit": "g"
+  },
+  {
+   "name": "Fresas enteras",
+   "amount": 108,
+   "unit": "g"
+  },
+  {
+   "name": "Almendras",
+   "amount": 15,
+   "unit": "g"
+  },
+  {
+   "name": "Atún en agua, drenado",
+   "amount": 180,
+   "unit": "ml"
+  },
+  {
+   "name": "Arroz blanco cocido",
+   "amount": 50,
+   "unit": "g"
+  },
+  {
+   "name": "Pepino pelado",
+   "amount": 90,
+   "unit": "g"
+  },
+  {
+   "name": "Aguacate",
+   "amount": 93,
+   "unit": "g"
+  },
+  {
+   "name": "Zanahoria",
+   "amount": 40,
+   "unit": "g"
+  }
+ ]
+}

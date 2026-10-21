@@ -12,7 +12,7 @@ app.post('/upload', upload.array('files', 2), async (req: Request, res: Response
     for (const file of req.files as Express.Multer.File[]) {
         const parser = new PDFParse({ url: file.path });
         
-        const results = await parser.getScreenshot({scale: 2});
+        const results = await parser.getScreenshot({scale: 4});
         await parser.destroy();
 
         for (const page of results.pages) {
