@@ -8,7 +8,7 @@ const measureStartRegex = /^[\d½¼¾⅓⅔%]/;
 const continuationRegex = /^(\p{Ll}|\d)/u;
 
 // Step 1: one entry per line. Drops blank lines and glues wrapped lines back together.
-function joinWrappedLines(text: string): string[] {
+function buildIngredientLines(text: string): string[] {
     const lines: string[] = [];
     for (const line of text.split('\n').map(line => line.trim()).filter(line => line.length > 0)) {
         if (lines.length > 0 && continuationRegex.test(line)) lines[lines.length - 1] += ` ${line}`;
@@ -29,7 +29,7 @@ function toIngredientEntry(line: string, quantity: RegExpExecArray): IngredientE
 // Turns the text of a menu page into ingredients and quantities.
 export function parseMenu(text: string): IngredientEntry[] {
     const entries: IngredientEntry[] = [];
-    for (const line of joinWrappedLines(text)) {
+    for (const line of buildIngredientLines(text)) {
         // Step 2: headers, day names, the date and recipe names have no quantity, so they are skipped
         const quantity = quantityRegex.exec(line);
         const entry = quantity && toIngredientEntry(line, quantity);
